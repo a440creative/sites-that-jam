@@ -1,0 +1,161 @@
+@import "~bulma/sass/utilities/initial-variables"
+
+// Config vars
+
+//Client Main Color
+$client-main: #111D4A
+$client-main-invert: #fff
+//Client Secondary Color
+$client-alt-one: #F2542D
+$client-alt-one-invert: #fff
+$client-alt-two: #A7B0CA
+$client-alt-two-invert: #fff
+$client-alt-two: #A7B0CA
+$client-alt-two-invert: #fff
+
+$primary: $client-main
+$primary-invert: $client-main-invert
+$info: $client-alt-one
+$body-color: #373F47
+$black: #2b2523
+$title-color: $client-alt-one
+$subtitle-color: $client-main
+$content-heading-color: $client-alt-one
+
+
+@import "~bulma"
+
+.navbar-item img
+  max-height: 39px
+.hero-body
+  z-index: 5
+.hero-overlay
+  background: rgba(3, 16, 56, 0.3)
+  overflow: hidden
+  width: 100%
+  height: 100%
+  z-index: 1
+  position: absolute
+
+button.is-burger
+ background-color: transparent
+ border: 0
+button.is-burger.navbar-burger.burger.active
+ background-color: transparent
+ border: 0
+button.is-burger:hover
+ background-color: transparent
+ border: 0
+.section-border-bottom
+ border-bottom: solid 1px #333
+.tabs a
+  color: $client-main
+  border-bottom-color: $client-main
+  border-bottom-style: solid
+  border-bottom-width: 1px
+  :hover
+   color: $client-alt-one 
+.tabs a:hover
+  color: $client-alt-one
+  border-bottom-color: $client-alt-one
+.navbar-item.active
+  color: $client-main
+  border-bottom-color: $client-alt-one
+  border-bottom-style: solid
+  border-bottom-width: 1px
+
++fullhd
+ .is-clipped-4
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 6
+  overflow: hidden
+
+ .is-clipped-5
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 7
+  overflow: hidden
+
++widescreen
+ .is-clipped-4
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 6
+  overflow: hidden
+
+ .is-clipped-5
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 7
+  overflow: hidden
+
++desktop
+ .is-clipped-4
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 5
+  overflow: hidden
+
+ .is-clipped-5
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 6
+  overflow: hidden
+
++tablet
+ .is-clipped-4
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 4
+  overflow: hidden
+
+ .is-clipped-5
+  display: -webkit-box;
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 5
+  overflow: hidden
+
++mobile
+ .navbar-menu
+   background: $client-main
+   display: block
+   position: fixed
+   top: 52px
+   left: -100%
+   width: auto
+   height: 100vh
+   transition-property: all
+   transition-timing-function: ease-in 150ms
+   transition-duration: 200ms
+   transform: translateX(50vw) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1)
+   overflow:hidden
+ .navbar-menu.is-active
+   display: block
+   position: fixed
+   top: 52px
+   left: 0
+   width: 100%
+   height: 100vh
+   transition-property: all
+   transition-timing-function: ease-in 150ms
+   transition-duration: 200ms
+   transform: translateX(0vw) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1)
+   overflow:hidden
+ .tabs
+   display: block
+ .tabs ul
+   display: block
+ .tabs li
+   display: block
+ .tabs a
+   color: $client-main-invert
+   border-bottom-color: $client-main-invert
+ .reverse-column-order
+   display: flex
+   flex-direction: column-reverse
+
+
+
+
+

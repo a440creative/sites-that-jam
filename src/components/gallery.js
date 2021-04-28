@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import * as React from "react"
+import { useState } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Gallery = ({ gridItems }) => {
@@ -8,9 +9,9 @@ const Gallery = ({ gridItems }) => {
   const defaultImageAlt = defaultItems.imageAlt
   const [selectedImg, setSelectedImg] = useState(defaultImage)
   const [selectedImgAlt, setSelectedImgAlt] = useState(defaultImageAlt)
-  useEffect(() => {
-    setModalActive("")
-  }, [])
+  // useEffect(() => {
+  //   setModalActive("")
+  // }, [])
   return (
     <section className="section">
       <div className="container">

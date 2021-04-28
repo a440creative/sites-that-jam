@@ -2,12 +2,12 @@ import React, { useState } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Gallery = ({ gridItems }) => {
+  const [modalActive, setModalActive] = useState("")
   const defaultItems = gridItems[0]
   const defaultImage = getImage(defaultItems.image)
   const defaultImageAlt = defaultItems.imageAlt
   const [selectedImg, setSelectedImg] = useState(defaultImage)
   const [selectedImgAlt, setSelectedImgAlt] = useState(defaultImageAlt)
-  const [modalActive, setModalActive] = useState("")
   return (
     <section className="section">
       <div className="container">

@@ -1,17 +1,21 @@
 import * as React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Gallery = ({ gridItems }) => {
-  const [modalActive, setModalActive] = useState("")
+  const [hasMounted, setHasMounted] = useState(false)
   const defaultItems = gridItems[0]
   const defaultImage = getImage(defaultItems.image)
   const defaultImageAlt = defaultItems.imageAlt
   const [selectedImg, setSelectedImg] = useState(defaultImage)
   const [selectedImgAlt, setSelectedImgAlt] = useState(defaultImageAlt)
-  // useEffect(() => {
-  //   setModalActive("")
-  // }, [])
+  const [modalActive, setModalActive] = useState("")
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
+  if (!hasMounted) {
+    return null
+  }
   return (
     <section className="section">
       <div className="container">
@@ -40,11 +44,7 @@ const Gallery = ({ gridItems }) => {
                   </li>
                 )
               })}
-              <div
-                className={`modal ${
-                  modalActive ? "is-active" : "is-not-active"
-                }`}
-              >
+              <div className={`modal ${modalActive ? "is-active" : ""}`}>
                 <div
                   className="modal-background"
                   style={{ cursor: "pointer" }}

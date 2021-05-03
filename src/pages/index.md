@@ -51,27 +51,27 @@ imageGallery:
 services:
   title: Stuff We Offer
   blurbs:
-    - headline: Blazing Fast Websites
+    - headline: Service One
       text: We create websites that score high in performance Click below to find out why that's so important.
       buttontext: Learn More
       buttonlink: about
-    - headline: Our Portfolio
+    - headline: Service Two
       text: Here is just a small taste of what A440 Creative can do for you. Kindly peruse some previous projects.
       buttontext: Learn More
       buttonlink: about
-    - headline: JAM Me Up!
+    - headline: Service Three
       text: Are you thinking that you want a secure, easy to manage, performant website in your life? Yes, you are!
       buttontext: Learn More
       buttonlink: about
-    - headline: Blazing Fast Websites
+    - headline: Service Four
       text: We create websites that score high in performance Click below to find out why that's so important.
       buttontext: Learn More
       buttonlink: about
-    - headline: Our Portfolio
+    - headline: Service Five
       text: Here is just a small taste of what A440 Creative can do for you. Kindly peruse some previous projects.
       buttontext: Learn Mores
       buttonlink: about
-    - headline: JAM Me Up!
+    - headline: Service Six
       text: Are you thinking that you want a secure, easy to manage, performant website in your life? Yes, you are!
       buttontext: Learn More
       buttonlink: about

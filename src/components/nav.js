@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <span class="title is-4">SitesThatJam.com</span>
+            <span className="title is-4">SitesThatJam.com</span>
             {/* <StaticImage
               className=""
               layout="fixed"

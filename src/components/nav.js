@@ -65,7 +65,7 @@ const Navbar = () => {
                     About
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     className="navbar-item"
                     to="/services"
@@ -103,7 +103,7 @@ const Navbar = () => {
                   >
                     Contact
                   </Link>
-                </li>
+                </li> */}
               </ul>
               <span className="navbar-item">
                 <a

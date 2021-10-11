@@ -36,18 +36,7 @@ features:
       buttonlink: about
 
 imageGallery:
-  - image: 120-dietech-5-12-20.png
-    imageAlt: Dietech guy doing stuff
-  - image: 363-dietech-5-12-20.png
-    imageAlt: Dietech guy sleeping
-  - image: 440-dietech-5-12-20.png
-    imageAlt: Long beard
-  - image: 445-dietech-5-12-20.png
-    imageAlt: Bearded dude again
-  - image: 508-dietech-5-12-20.png
-    imageAlt: Press worker
-  - image: 526-dietech-5-12-20.png
-    imageAlt: Fire worker
+  title: Photo Gallery
 services:
   title: Stuff We Offer
   blurbs:

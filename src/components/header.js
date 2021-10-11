@@ -6,6 +6,7 @@ const Header = ({ image, headline, subheadline, buttontext, buttonlink }) => {
   return (
     <BgImage
       Tag="header"
+      id="top"
       className="hero is-primary is-large is-bold"
       image={image}
       style={{ backgroundPosition: "center left" }}

@@ -17,7 +17,7 @@ const IndexPageTemplate = ({ data, location }) => {
   const features = page.frontmatter.features
   const main = page.frontmatter.main
   const mainimage = getImage(main.image)
-  const gallery = page.frontmatter.imageGallery
+  const gallery = data.allFile
   const services = page.frontmatter.services
 
   return (
@@ -107,18 +107,7 @@ export const pageQuery = graphql`
           imageAlt
         }
         imageGallery {
-          image {
-            childImageSharp {
-              gatsbyImageData(
-                transformOptions: { cropFocus: CENTER }
-                layout: CONSTRAINED
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-              )
-              id
-            }
-          }
-          imageAlt
+          title
         }
         services {
           title
@@ -127,6 +116,24 @@ export const pageQuery = graphql`
             buttonlink
             text
             headline
+          }
+        }
+      }
+    }
+    allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
+      edges {
+        node {
+          name
+          id
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              transformOptions: { cropFocus: CENTER }
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              quality: 70
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }

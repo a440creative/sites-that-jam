@@ -80,6 +80,8 @@ module.exports = {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
+    `simple-react-lightbox`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {

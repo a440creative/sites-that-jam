@@ -1,13 +1,19 @@
 import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Navbar = () => {
+  window.onbeforeunload = function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    })
+  }
   const [toggleNav, setToggleNav] = useState("")
-
   return (
-    <nav className="navbar">
+    <nav className="navbar is-fixed-top">
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
@@ -42,77 +48,141 @@ const Navbar = () => {
           id="navbarMenu"
           className={`navbar-menu ${toggleNav ? "is-active" : ""}`}
         >
-          <div className="navbar-end">
+          <div className="navbar-end is-desktop-menu is-hidden-mobile">
             <div className="tabs is-right">
               <ul>
                 <li>
-                  <Link
-                    className="navbar-item"
-                    to="/"
-                    activeClassName="active"
-                    activeStyle={{ color: " #F2542D" }}
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#top")
+                    }}
                   >
                     Home
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link
-                    className="navbar-item"
-                    to="/about"
-                    activeClassName="active"
-                    activeStyle={{ color: " #F2542D" }}
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#about")
+                    }}
                   >
                     About
-                  </Link>
+                  </button>
                 </li>
-                {/* <li>
-                  <Link
-                    className="navbar-item"
-                    to="/services"
-                    activeClassName="active"
-                    activeStyle={{ color: " #F2542D" }}
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#features")
+                    }}
+                  >
+                    Features
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#gallery")
+                    }}
+                  >
+                    Photo Gallery
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#services")
+                    }}
                   >
                     Services
-                  </Link>
+                  </button>
                 </li>
-                <li>
-                  <Link
-                    className="navbar-item"
-                    to="/portfolio"
-                    activeClassName="active"
-                    activeStyle={{ color: " #F2542D" }}
-                  >
-                    Portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="navbar-item"
-                    to="/blog"
-                    activeClassName="active"
-                    activeStyle={{ color: " #F2542D" }}
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="navbar-item"
-                    to="/contact"
-                    activeStyle={{ color: " #F2542D" }}
-                  >
-                    Contact
-                  </Link>
-                </li> */}
               </ul>
-              <span className="navbar-item">
-                <a
-                  className="button is-info"
-                  href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html"
-                >
-                  <span title="Hello from the other side">Get Started</span>
-                </a>
-              </span>
+            </div>
+          </div>
+          <div className="navbar-end is-tablet-mobile-menu is-hidden-desktop">
+            <div className="tabs is-right">
+              <ul>
+                <li>
+                  <button
+                    className="nnavbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#top")
+                      setToggleNav(!toggleNav)
+                    }}
+                  >
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#about")
+                      setToggleNav(!toggleNav)
+                    }}
+                  >
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#features")
+                      setToggleNav(!toggleNav)
+                    }}
+                  >
+                    Features
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#tgallery")
+                      setToggleNav(!toggleNav)
+                    }}
+                  >
+                    Photo Gallery
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="navbar-item button is-ghost"
+                    aria-label="Scroll to Top"
+                    tabIndex={0}
+                    onClick={() => {
+                      scrollTo("#services")
+                      setToggleNav(!toggleNav)
+                    }}
+                  >
+                    Services
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

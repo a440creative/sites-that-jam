@@ -4,7 +4,7 @@ import { FaFire } from "react-icons/fa"
 
 const Features = ({ gridItems }) => {
   return (
-    <section className="section">
+    <section id="features" className="section">
       <div className="container">
         <div className="columns is-align-content-stretch">
           {gridItems.map(item => (

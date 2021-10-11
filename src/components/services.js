@@ -4,7 +4,7 @@ import { FaFire } from "react-icons/fa"
 
 const Services = ({ title, gridItems }) => {
   return (
-    <section className="section">
+    <section id="services" className="section">
       <div className="container">
         <div className="columns">
           <div className="column has-text-centered">

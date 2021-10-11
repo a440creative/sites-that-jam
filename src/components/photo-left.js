@@ -11,7 +11,7 @@ const PhotoLeft = ({
   buttontext,
 }) => {
   return (
-    <section className="section  has-background-light">
+    <section id="about" className="section  has-background-light">
       <div className="container">
         <div className="columns is-variable is-1-mobile is-2-tablet is-3-desktop is-8-widescreen is-3-fullhd">
           <div className="column">

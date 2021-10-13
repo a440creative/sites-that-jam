@@ -1,16 +1,17 @@
 import * as React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Navbar = () => {
-  window.onbeforeunload = function () {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    })
+  const resetToTop = () => {
+    scrollTo("#top")
   }
+
+  // This function will called only once
+  useEffect(() => {
+    resetToTop()
+  }, [])
   const [toggleNav, setToggleNav] = useState("")
   return (
     <nav className="navbar is-fixed-top">
@@ -162,7 +163,7 @@ const Navbar = () => {
                     aria-label="Scroll to Top"
                     tabIndex={0}
                     onClick={() => {
-                      scrollTo("#tgallery")
+                      scrollTo("#gallery")
                       setToggleNav(!toggleNav)
                     }}
                   >

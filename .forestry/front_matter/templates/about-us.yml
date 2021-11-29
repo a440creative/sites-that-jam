@@ -1,0 +1,60 @@
+---
+label: About Us
+hide_body: false
+fields:
+- type: text
+  name: templateKey
+  label: templateKey
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
+- type: text
+  name: imageAlt
+  label: imageAlt
+- type: text
+  name: buttontext
+  label: buttontext
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: textarea
+    name: subheadline
+    label: subheadline
+  - type: text
+    name: buttontext
+    label: buttontext
+  - type: text
+    name: buttonlink
+    label: buttonlink
+- type: field_group
+  name: main
+  label: main
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: imageAlt
+    label: imageAlt
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
+  - type: text
+    name: buttontext
+    label: buttontext
+  - type: text
+    name: buttonlink
+    label: buttonlink

@@ -1,11 +1,11 @@
 ---
 templateKey: blog-post
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
----
+title: My Revised Title
+date: 2015-05-01T22:12:03.284Z
+description: Hello World
 
-This is my first post on my new fake blog! How exciting!
+---
+This is my first post on my new fake blog! How mesmerising!
 
 I'm sure I'll write a lot more interesting things in the future.
 
@@ -28,11 +28,11 @@ You can also write code blocks here!
 const saltyDuckEgg = "chinese preserved food product"
 ```
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
+| Number | Title | Year |
+| :--- | :--- | ---: |
+| 1 | Harry Potter and the Philosopher’s Stone | 2001 |
+| 2 | Harry Potter and the Chamber of Secrets | 2002 |
+| 3 | Harry Potter and the Prisoner of Azkaban | 2004 |
 
 [View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
 
@@ -46,7 +46,7 @@ This is a paragraph.
 
     Header 1
     ========
-
+    
     Header 2
     --------
 
@@ -109,17 +109,19 @@ This is a paragraph.
     >
     >     Markdown.generate();
 
-- Red
-- Green
-- Blue
+* Red
+* Green
+* Blue
+
 
 * Red
 * Green
 * Blue
 
-- Red
-- Green
-- Blue
+
+* Red
+* Green
+* Blue
 
 ```markdown
 - Red
@@ -135,8 +137,8 @@ This is a paragraph.
 - Blue
 ```
 
-- `code goes` here in this line
-- **bold** goes here
+* `code goes` here in this line
+* **bold** goes here
 
 ```markdown
 - `code goes` here in this line
@@ -144,8 +146,8 @@ This is a paragraph.
 ```
 
 1. Buy flour and salt
-1. Mix together with water
-1. Bake
+2. Mix together with water
+3. Bake
 
 ```markdown
 1. Buy flour and salt
@@ -154,7 +156,7 @@ This is a paragraph.
 ```
 
 1. `code goes` here in this line
-1. **bold** goes here
+2. **bold** goes here
 
 ```markdown
 1. `code goes` here in this line
@@ -168,43 +170,41 @@ Paragraph:
 <!-- -->
 
     Paragraph:
-
+    
         Code
 
----
+***
 
----
+***
 
----
+***
 
----
+***
 
----
+***
 
     * * *
-
+    
     ***
-
+    
     *****
-
+    
     - - -
-
+    
     ---------------------------------------
 
 This is [an example](http://example.com "Example") link.
 
 [This link](http://example.com) has no title attr.
 
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
+This is [an example](http://example.com "Optional Title") reference-style link.
 
     This is [an example](http://example.com "Example") link.
-
+    
     [This link](http://example.com) has no title attr.
-
+    
     This is [an example] [id] reference-style link.
-
+    
     [id]: http://example.com "Optional Title"
 
 _single asterisks_
@@ -216,11 +216,11 @@ _single underscores_
 **double underscores**
 
     *single asterisks*
-
+    
     _single underscores_
-
+    
     **double asterisks**
-
+    
     __double underscores__
 
 This paragraph has some `code` in it.

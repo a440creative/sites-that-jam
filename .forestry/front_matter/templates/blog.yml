@@ -1,6 +1,7 @@
 ---
 label: Blog
 hide_body: false
+display_field: description
 fields:
 - type: text
   name: templateKey
